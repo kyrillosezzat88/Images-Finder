@@ -1,5 +1,6 @@
 import React,{useEffect , useState} from 'react';
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 import '../Styles/Details.css';
 const ImgDetailes = (props) => {
     let imgID = props.match.params.Image_id;
@@ -17,7 +18,8 @@ const ImgDetailes = (props) => {
             <div className="img"><img src={Image.largeImageURL} alt="img"/></div>
             <div className="info">
                 <h1>Uploaded By:{Image.user}</h1>
-                <a target='_blank' href={Image.pageURL} download>Go To Download</a>
+                <a target='_blank' href={Image.pageURL} download>Go To Download</a><br/>
+                <Link to='/'>Home</Link>
             </div>
         </div>
     )

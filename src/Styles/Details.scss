@@ -19,6 +19,9 @@
     }
     .info{
         text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         h1{text-align: center; text-transform: capitalize;}
         a{
             color:#fff;
@@ -26,6 +29,8 @@
             padding: 5px 25px;
             text-decoration: none;
             border-radius: 5px;
+            display: block;
+            width: 50%;
         }
     }
 }
